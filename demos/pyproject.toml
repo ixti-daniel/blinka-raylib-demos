@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "demos"
+version = "0.1.0"
+description = ""
+authors = ["ixti-daniel <daniel@ixti.fi>"]
+readme = "README.md"
+packages = [{include = "demos", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.4.3"
+pygame = "^2.5.2"
+adafruit-blinka = "^8.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
