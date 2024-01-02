@@ -9,8 +9,11 @@ packages = [{include = "demos", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 pytest = "^7.4.3"
-pygame = "^2.5.2"
-adafruit-blinka = "^8.29.0"
+adafruit-blinka = { platform = "linux", version = "^8.29.0"}
+pygame = [ 
+    { version = "==2.5.2", markers = "platform_machine == 'armv7l'", source = "pypi" },
+    { version = "==2.5.2", markers = "sys_platform == 'windows'", source = "pypi" }
+ ]
 
 
 [build-system]
