@@ -10,11 +10,8 @@ packages = [{include = "demos", from = "src"}]
 python = "==3.9.2"
 pytest = "^7.4.3"
 adafruit-blinka = { platform = "linux", version = "^8.29.0"}
-
-[tool.poetry.group.pygamelin.dependencies]
-pygame = [ 
-    { version = "^2.0.0", markers = "platform_machine == 'armv7l'", source = "pypi" },
- ]
+rpi-gpio = { platform = "linux", version = "^0.7.1"}
+numpy = "^1.26.3"
 
 [tool.poetry.group.pygamewin.dependencies]
 pygame = [
