@@ -11,12 +11,7 @@ python = "==3.9.2"
 pytest = "^7.4.3"
 adafruit-blinka = { platform = "linux", version = "^8.29.0"}
 rpi-gpio = { platform = "linux", version = "^0.7.1"}
-numpy = "^1.26.3"
-
-[tool.poetry.group.pygamewin.dependencies]
-pygame = [
- { version = "==2.5.2", markers = "sys_platform == 'win32'", source = "pypi" }
-]
+raylib = "==4.2.1.2"
 
 [build-system]
 requires = ["poetry-core"]
