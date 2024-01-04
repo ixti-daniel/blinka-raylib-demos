@@ -1,2 +1,2 @@
-# blinka-pygame-demos
-Interactive demos using raspberry and pygame! 
+# blinka-raylib-demos
+Interactive demos using raspberry and raylib! 
